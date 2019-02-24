@@ -1,0 +1,60 @@
+.client-stories{
+	margin:20px 20px;
+	padding: 20px 20px;
+	.client-profile{
+		display: flex;
+		align-items: center;
+		margin-bottom:30px;
+		box-shadow: $shadow;
+		padding:20px 20px;
+		.client-image{
+			max-width: 100px;
+			margin-right:20px;
+
+				img{
+					border-radius:50%;
+					object-fit: cover;
+					object-position: center;
+					}
+				}
+
+			.client-information{
+				li{
+				     	display:block;
+						font-family: $monM;
+						margin-bottom: 10px;		
+
+						span{
+							font-style: italic;
+							font-family:$monR;
+							font-size:12px;
+							margin-right:10px;
+							text-transform:capitalize;
+							color: $gray;
+						}	
+					
+				}
+			}
+
+	}
+	.client-stories-description{
+		.travel-image{
+			margin-bottom:30px;
+				img{
+			 		border-radius:10px;
+				}
+		}
+		
+		p{
+			text-align:justify;
+		}
+
+	}
+}
+
+@include custom_max(640px){
+	.client-stories{
+		margin:20px 0;
+		padding:0;
+	}
+}

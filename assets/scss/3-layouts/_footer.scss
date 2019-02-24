@@ -1,0 +1,163 @@
+footer{
+	background:linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url('../images/footer-image.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.footer-content{
+		padding: 40px 0 0 0;
+		display: block;
+		position: relative;
+		&-logo{
+			max-width:300px;
+			margin:0 auto;	
+		}
+
+		&-subscribe{
+			display:flex;
+			align-items: center;
+			justify-content:center;
+			margin-bottom:50px;
+			.subscribe_email{
+				border:2px solid $orange;
+				border-top-left-radius:25px;
+				border-bottom-left-radius:25px;	
+				padding:15px 25px;	
+				font-size:12px;
+				
+				
+			}
+		}
+
+		&-contact_details{
+
+			.details{
+
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 50px;
+
+				
+				.icon{
+						width:50px;
+						height:50px;
+
+						background-color:$orange;
+						border-radius: 50%;
+						display: flex;
+						align-items:center;
+						justify-content: center;
+						flex:0 0 50px;
+						color: white;
+						font-size: 24px;
+						margin-right: 10px;
+
+
+
+					}
+
+				.text{
+					font-family:$monSb;
+					color: $black;
+					line-height:1.5;
+					font-size:14px
+				}
+
+			}
+
+		}
+
+		&-social_media{
+			display: flex;
+			justify-content:center;
+			a{
+						width:35px;
+						height:35px;
+						background-color:$orange;
+						border-radius: 50%;
+						display: flex;
+						align-items:center;
+						justify-content: center;
+						color: white;
+						font-size:18px;
+						margin:20px 10px;
+
+					
+			}
+		}
+
+		&-copyright{
+			background-color: $red;
+			color: white;
+			text-align: center;
+			padding:10px 0;
+			margin-top:25px;
+			width: 100%;
+
+			span{
+				font-size: 12px;
+				letter-spacing: 1px;
+				line-height: 1.2	;
+			}
+		}		
+
+	}
+
+
+	@include custom_max(991px){
+		.footer-content{
+			&-contact_details{
+				.details{
+					margin-bottom:30px;
+					.icon{
+						width:35px;
+						height:35px;
+						font-size:18px;
+						flex:0 0 35px;
+					}
+					.text{
+						font-size:14px;
+					}
+				}
+			}
+			
+
+		}
+	}
+
+	@include custom_max(767px){
+		.footer-content{
+			&-logo{
+				max-width:150px;
+			}
+			&-contact_details{
+				.details{
+					margin-bottom:20px;
+				}
+			}
+			&-copyright{
+				padding:12px 15px;
+			}
+
+			&-subscribe{
+				.subscribe_email{
+					padding:0 10px;
+				}
+			}
+		}
+	}
+
+	@include custom_max(365px){
+		.footer-content{
+			&-subscribe{
+				margin-bottom:30px;
+				.subscribe_email{
+					padding:0;
+				}
+			}
+		}
+
+	}
+
+}
+

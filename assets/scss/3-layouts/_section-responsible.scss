@@ -1,0 +1,33 @@
+.section-responsible{
+	padding-bottom: 0;
+
+	&__slider{
+		.slider-item{
+		padding-top:20px;
+		a{
+			display: block;
+				img{
+					width:100%;
+					-webkit-filter: grayscale(100%);
+					filter: grayscale(50%);
+					-webkit-transition: .3s ease-in-out;
+					transition: .3s ease-in-out;
+				  &:hover{
+					-webkit-filter: grayscale(0);
+					filter: grayscale(0);
+				       }
+				}
+		
+			}
+		}
+
+	@include custom_max(991px){
+
+		.slick-dots{
+			display:none !important;
+		}
+		
+	}
+
+	}	
+}

@@ -1,0 +1,41 @@
+#customize-icon{
+	max-width:75px;
+	position: fixed;
+	bottom: 0;
+	z-index: 99999;
+
+	.icon{
+		position: absolute;
+		top:0;
+		left:65%;
+		
+	}
+}
+
+.section-customize-trip{
+	h2{
+		font-size:18px;
+		font-family: $monSb;
+		border-bottom:1px solid $gray;
+		padding: 10px 0;
+		margin: 20px 0;
+
+	}
+	.input-group{
+		margin-bottom: 20px;
+	}
+
+.form-control:focus{
+		border:1px solid gray;
+   }
+	.custom-select{
+		background: none;
+	}
+}
+
+@include custom_max(991px){
+	#customize-icon{
+		display:none !important;
+	}
+}
+

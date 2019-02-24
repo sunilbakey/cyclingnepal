@@ -1,0 +1,116 @@
+.section-slider{
+	position: relative;
+
+	.slick-slider{
+		margin-bottom:0;
+	}
+
+		.slider-item{
+			height: calc(100vh - 100px);
+			overflow: hidden;
+			min-height: 500px;
+			img{
+				width: 100%;
+				height: calc(100vh - 100px);
+				min-height: 500px;
+				object-fit: cover;
+				object-position: center;
+			}
+
+	}
+	.slick-arrow{
+			background-color:rgba(255,255,255,0.3);
+		    width: 30px;
+		    height: 30px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    color: white;
+		    position: absolute;
+		    top:50%;
+		    cursor:pointer;
+		    z-index: 1;
+		    font-size: 18px;
+		    opacity: 0.8;
+
+		    &:hover{
+				background-color:rgba(255,255,255,0.6);
+				opacity: 1;
+
+		    }
+		}
+		.arrow-left{
+			left:25px;
+
+		}
+
+		.arrow-right{
+			right:25px;
+			
+			}
+
+
+			 .slick-dots{
+	              	left: 50%;
+			 	    position: absolute;
+					bottom:25px;
+					display: flex;
+
+			  button {
+					width: 12px;
+					height: 12px;
+					text-indent:9999px;
+					border:none;
+					margin-right: 10px;
+					border-radius:10px;
+					
+			   }
+
+			   .slick-active button{
+
+			   	background:$orange;
+			   }
+	}
+	
+	.banner-logos{
+			  .power-by-logo{
+				font-family: $monB;
+				font-size: 18px;
+				color: white;
+				position:absolute;
+				bottom:25px;
+				right:20%;
+				img{
+					max-width: 100px;
+				}	
+			}
+			.trip-advisor-logo{
+				right:10%;
+				position:absolute;
+				bottom:25px;
+				img{
+					max-width:100px;
+					}
+			}
+	
+	}
+	
+
+	@include custom_max(767px){
+		.slider-item{
+			height:auto;
+			min-height:400px;
+			img{
+				height:auto;
+				min-height:400px;
+			}
+		}
+	}
+
+	@include custom_max(640px){
+		.banner-logos{
+			display:none;
+		}
+
+	}
+}

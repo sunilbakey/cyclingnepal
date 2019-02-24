@@ -1,0 +1,94 @@
+.section-article{
+		
+		&__tips{
+					margin:50px 0;
+					background-color:$white;
+					border-radius:9px;
+					border:1px solid $border-color;
+
+		
+
+					&:hover{
+						box-shadow: $shadow;
+						transition: all .3s ease-in;
+						transform: translateY(-4px);
+					}
+				
+					.article-image img{
+						width:100%;
+						border-top-left-radius:9px;
+						border-top-right-radius:9px;
+					}
+					.article-description{
+						padding: 20px 20px;
+
+
+						.article-date{
+							margin-bottom: 10px;
+							font-size: 10px;
+							font-family:$monSb;
+							text-transform:uppercase;
+						}
+						.article-title{
+							color: $orange;
+							text-transform: uppercase;
+							font-family:$monB;
+							font-size: 14px;
+							display: block;
+							line-height: 1.5;
+							margin-bottom: 10px;
+						}
+
+						.description{
+							display: block;
+							line-height: 1.5;
+							margin-bottom: 10px;
+
+
+						}
+
+						.article-btn{
+							margin-top:15px;
+					}
+				}
+	}
+
+	&-details{
+		@extend .section-article__tips;
+		margin:0;
+		max-width: 100%;
+		max-height: 100%;
+		border: none;
+
+		&:hover{
+			box-shadow:none;
+			transition:none;
+			transform:none;
+		 }	
+		 .article-image img{
+						width:100%;
+						border-radius: 10px;
+			}
+			.article-description{
+						padding: 20px 10px;
+						.article-date{
+							margin-bottom: 10px;
+							font-size: 14px;
+						}
+						.article-title{
+							font-size: 18px;
+						}
+
+				}				
+	}
+
+	.section-releted-articles{
+		.title{
+			border-bottom:1px solid $gray;
+		}
+		.section-article__tips{
+			 margin:20px 0 50px 0 ;
+		}
+	}
+}
+

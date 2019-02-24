@@ -1,0 +1,48 @@
+.button{
+	margin-top: 20px;
+}
+
+.btn:focus, .btn.focus{
+  box-shadow:none;
+}
+
+
+.btn{
+  background-color:$red;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color:white;
+  text-transform: capitalize;
+  padding: 10px 0px;
+  width: 150px;
+  border-radius:5px;
+  overflow: hidden;
+  &:hover{
+    outline: none;
+    color:white;
+    background-color:$btn-hover;
+  }
+}
+
+.subscribe_btn{
+   background-color:$orange;
+   padding:10px 20px;
+   color:white;
+   border-top-right-radius: 25px;
+   border-bottom-right-radius: 25px;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   font-family:$monM;
+
+   &:hover{
+      color:white;
+   }
+}
+
+.input-group-btn{
+  display:flex;
+}
+

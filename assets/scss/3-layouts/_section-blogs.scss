@@ -1,0 +1,132 @@
+.section-blogs{
+	&__wrapper{
+		.blog-box{
+			margin-bottom: 30px;
+
+					.blog-img{
+						position: relative;
+						cursor: pointer;
+						 background-size: cover;
+					     background-repeat: no-repeat;
+					    -webkit-transition: all .5s;
+					    -moz-transition: all .5s;
+					    -o-transition: all .5s;
+					       transition: all .5s;
+					 
+					    width:100%;
+					    overflow: hidden;
+					    border-radius: 10px;
+
+					    img:before{
+					    	   content: "";
+							    display: none;
+							    height: 100%;
+							    width: 100%;
+							    position: absolute;
+							    top: 0;
+							    left: 0;
+							    background-color: rgba(52,73,94,0.75);
+					    }
+
+					    img{
+					    	    -webkit-transition: all .3s ease-out; 
+							    -moz-transition: all .3s ease-out; 
+							    -o-transition: all .3s ease-out; 
+							    transition: all .3s ease-out; 
+							    width:100%;
+							    
+
+					    	&:hover{
+							    -ms-transform: scale(1.2);
+							    -moz-transform: scale(1.2);
+							    -webkit-transform: scale(1.2);
+							    -o-transform: scale(1.2);
+							    transform: scale(1.2);
+							    border-radius: 10px;
+							}
+
+						  }
+					    }
+
+					.blog-description{
+								.blog-info{
+
+									padding-top: 30px;
+
+								 	li{
+								 		display: inline-block;
+
+								 	&:first-child a{
+								 	padding-left: 0px;
+								 	}
+										
+									a{
+											border-right:1px solid;
+											padding: 0 10px;
+											text-transform: capitalize;
+											color: $black;
+									 }
+
+								 	}
+								}
+
+
+							h4{
+								margin:16px 0 10px 0;
+							}
+
+							h4 a:hover{
+								color:$orange;
+								text-decoration: none;
+							}
+
+							
+					}
+			}
+
+	}
+
+	.section-inner{
+		padding: 40px 0;
+
+				.title{
+					font-family: $monB;
+					text-transform: capitalize;
+					border-bottom: 1px solid $gray;	
+					margin-bottom:20px;
+				}
+
+
+	}
+
+	.section-releted-blogs p{
+		display: none;
+	}
+	
+	.comment-respond-form{
+					.form-group{
+						margin-bottom: 20px;
+						label{
+						  font-size: 14px;
+						  font-family: $monSb;
+						}
+
+					}		
+	}
+
+	@include custom_max(991px){
+		&__wrapper{
+			.blog-box{
+				.blog-description{
+					.blog-info{
+						li{
+							a{
+							padding:0 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

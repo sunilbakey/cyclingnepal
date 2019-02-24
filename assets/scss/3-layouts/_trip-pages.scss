@@ -1,0 +1,80 @@
+.section-trip{
+	&-description{
+			margin-bottom: 30px;
+      			a{
+					display: block;
+					position: relative;
+					text-decoration: none;
+					border: 1px solid $gray;
+					border-radius: 9px;
+					line-height: 1.6;
+
+					figure{
+						display: block;
+						img{
+							width:100%;
+							    border-top-left-radius: 9px;
+    							border-top-right-radius: 9px;
+
+						}
+						figcaption{
+							display: block;
+							span{
+								display: block;
+								&.content{
+									padding: 30px 95px 15px 15px;
+								}
+								&.title{
+									font:16px $monB;
+									margin-bottom:20px;
+									text-transform: uppercase;
+								}
+								&.ratings{
+									font-size:14px;
+									color:$gray;
+									.fill{
+										color: $orange;
+
+									}
+								}
+								&.price,&.days{
+									
+									color:$text;
+									strong{
+										color:$red;
+										font-family: $monB
+									}
+								}
+
+								&.price{
+									text-align:right;
+									small{
+										display: block;
+									}
+								}
+								&.days{
+									
+									margin-top: 10px;
+
+								}
+								&.right-content{
+									position: absolute;
+									right: 15px;
+									bottom:10px;
+
+								}
+							}
+						}
+					}
+
+					}
+
+					a:hover{
+						box-shadow:$shadow;
+						transform: translateY(-4px);
+						color: $orange;
+					}
+
+
+				}
+}       

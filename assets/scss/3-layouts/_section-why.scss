@@ -1,0 +1,87 @@
+.section-whyus{
+	&_list{
+		padding: 0 30px;
+		position: relative;
+		margin-bottom: 50px;
+	.title{
+			color:$orange;
+			font-family:$monSb;
+			font-size:18px;
+			margin-bottom:10px;
+			text-transform: uppercase;
+		}
+
+		.text{
+			font-size: 14px;
+		}
+	}
+
+	.right{
+		text-align: right;
+		padding: 0 60px 0 0;
+			
+		.icon{
+			max-width:45px;
+			position: absolute;
+			right:-20px;
+			top: 10px;
+		}
+	}
+
+	.left{
+		text-align: left;
+		padding: 0 0 0 60px;
+
+		.icon{
+			max-width:45px;
+			position: absolute;
+			left:-20px; 
+			top: 10px;
+		}
+	}
+
+	&_image{
+		img{
+			width: 100%;
+		}
+		border:5px solid $yellow;
+		margin:20px;
+		box-shadow: $shadow;
+
+	}
+
+	@include custom_max(991px){
+
+		 .right{
+		 		text-align:left;
+				padding: 0 0 0 60px;
+
+		 	.icon{
+		 		left:-20px;
+		 		right:0;
+		 	}
+		 }
+
+		  &_image{
+		 	display:none;
+		 }
+	}
+
+	@include custom_max(575px){
+		.right{
+			padding:0 0 0 90px;
+
+			.icon{
+				left:15px;
+			}
+		}
+
+		.left{
+			padding: 0 0 0 90px;
+
+			.icon{
+				left:15px;
+			}
+		}
+	}
+}
